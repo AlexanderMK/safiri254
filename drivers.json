@@ -1,0 +1,17 @@
+
+{ "drivers": [{
+  "firstName": "Eric",
+    "secondName":"Wanjohi",
+    "phone":"0729765456",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+    "type":"pickup",
+    "tonnage":"0.5"
+  }, {
+    "firstName": "Alexander",
+    "secondName":"Kungu",
+    "phone":"0729765456",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+    "type":"lorry",
+    "tonnage":"2.5"
+  }]
+}

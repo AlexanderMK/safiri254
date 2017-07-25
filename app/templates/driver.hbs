@@ -1,1 +1,11 @@
-{{outlet}}
+<!-- <h3>Fill in the form below to create your profile</h3>
+<form>
+  <div class="form-group">
+  </div>
+</form> -->
+<ul>{{#each model as |driver|}}
+  <li>{{driver.firstName}} of a {{driver.type}}</li>
+  {{driver-tile driver=driver update="update"}}
+  {{/each}}
+</ul>
+{{new-driver saveDriver2="saveDriver3"}}
