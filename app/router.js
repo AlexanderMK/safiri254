@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('available-jobs');
   this.route('contact');
   this.route('about');
+  this.route('job');
 });
 
 export default Router;
