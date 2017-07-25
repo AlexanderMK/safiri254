@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    firebase: Ember.inject.service(),
   updateDriverForm: false,
   actions:{
     updateDriverForm(){

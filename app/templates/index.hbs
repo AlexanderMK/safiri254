@@ -1,8 +1,18 @@
 {{outlet}}
+<!-- <a {{action "signIn" "facebook"}} class="btn">{{fa-icon "facebook"}}</a> -->
+<!-- <a {{action "signIn" "twitter"}} class="btn">{{fa-icon "twitter"}}</a>
+<a {{action "signIn" "github"}} class="btn">{{fa-icon "github"}}</a> -->
+<a {{action "signIn" "google"}} class="btn">{{fa-icon "google"}}</a>
+<a {{action "signIn"}} class="btn">Sign In</a>
+<!-- {{#link-to 'available-jobs'}}Browse Jobs{{/link-to}}
+{{#link-to 'post'}}Post a Job{{/link-to}}
+{{#link-to 'portfolio'}}Driver Portfolios{{/link-to}} -->
 <hr>
 <!-- carousel -->
-
+{{#if session.isAuthenticated}}
+<button {{action 'signOut'}}> Sign Out</button>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -41,3 +51,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+{{else}}
+{{log-In signIn='signIn'}}
+{{/if}}

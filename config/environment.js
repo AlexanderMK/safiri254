@@ -25,7 +25,10 @@ module.exports = function(environment) {
    storageBucket: "safiri254-5893d.appspot.com",
    messagingSenderId: "347585596526"
  },
-
+ //firebase: 'https://<safiri254>.firebaseio.com/',
+ torii: {
+   sessionServiceName: 'session',
+ },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

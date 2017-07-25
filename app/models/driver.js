@@ -6,6 +6,7 @@ export default DS.Model.extend({
   phone:DS.attr(),
   image:DS.attr(),
   type:DS.attr(),
-  tonnage:DS.attr()
+  tonnage:DS.attr(),
+  email:DS.attr()
 
 });
