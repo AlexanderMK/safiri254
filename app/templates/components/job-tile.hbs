@@ -1,0 +1,6 @@
+ {{#each model as |job|}}
+  <p>{{job.title}} posted by {{job.author}}</p>
+ <button {{action 'addToCart' job}}>Pick Job</button>
+
+ {{/each}}
+{{available-jobs}}

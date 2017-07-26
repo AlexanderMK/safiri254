@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('job');
   this.route('post');
   this.route('portfolio');
+  this.route('pick');
 });
 
 export default Router;

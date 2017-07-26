@@ -1,6 +1,7 @@
 {{#each model as |job|}}
 <p>{{job.title}} posted by {{job.author}}</p>
 <!-- <button {{action 'delete' job}}>Delete Job</button> -->
+{{job-tile job=job}}
 {{/each}}
 
 {{new-job saveJob="saveJob"}}

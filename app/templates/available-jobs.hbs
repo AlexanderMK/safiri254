@@ -1,3 +1,20 @@
-{{#each model as |job|}}
-<p>{{job.title}} posted by {{job.author}}</p>
-{{/each}}
+<div class="newJob">
+  <div class="col-md-2"></div>
+<div class="col-md-8 jobList">
+  <h2 align="center">Available jobs </h2>
+ {{#each model as |job|}}
+
+  <h4 class="underlining badge"><strong>{{job.title}}</strong> posted by {{job.author}}</h4>
+  <div class="jobos">
+<h5><strong>Transportation Details</strong></h5>
+    <p>From: {{job.from}}</p>
+      <p>Destination:{{job.to}}</p>
+        <p>Proposed Amount:KSH.{{job.amount}}</p>
+        <p>Date due:{{job.carryingDate}}</p>
+      </div>
+<hr/>
+ {{/each}}
+ </div>
+<div class="col-md-2"></div>
+<!-- {{job-tile job=job}} -->
+</div>
