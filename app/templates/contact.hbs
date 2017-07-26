@@ -1,1 +1,41 @@
+<br>
+<div class="contact container">
+  <div class="map-location">
+    <h3>Our Location</h3>
+    <div id="map"></div>
+  </div>
+  <div class="contact-text">
+    <h3>Contact Us</h3>
+    <p><strong>Phone Number</strong>: +254700112233</p>
+    <p><strong>Email</strong>: contact@safiri254.com</p>
+    <p><strong>Address</strong>: Ngong Lane street</p>
+    <p><strong>Building</strong>: Ngong Lane Plaza</p>
+    <span class="social">
+      <a href="www.twitter.com">Twitter</a>
+      <a href="www.facebook.com">Facebook</a>
+    </span>
+  </div>
+
+  <script>
+      function initMap() {
+        var NgongLane = {lat: -1.3010246,lng: 36.7835774,};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: NgongLane
+        });
+        var marker = new google.maps.Marker({
+          position: NgongLane,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhORssNosbA8vL5B2d9RC9fqxemydHckI&callback=initMap">
+    </script>
+</div>
+
+<br>
+
+{{outlet}}
+
 {{outlet}}
