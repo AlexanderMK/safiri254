@@ -1,0 +1,6 @@
+{{#each model as |job|}}
+<p>{{job.title}} posted by {{job.author}}</p>
+<!-- <button {{action 'delete' job}}>Delete Job</button> -->
+{{/each}}
+
+{{new-job saveJob="saveJob"}}

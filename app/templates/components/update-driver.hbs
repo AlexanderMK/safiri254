@@ -1,0 +1,40 @@
+{{#if updateDriverForm}}
+  <h4>Update details of {{driver.firstName}} {{driver.secondName}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        {{input value=firstName id="firstName" placeholder=driver.firstName}}
+      </div>
+
+      <div class="form-group">
+        <label for="secondName">Surname</label>
+        {{input value=secondName id="secondName" placeholder=driver.secondName}}
+      </div>
+
+      <div class="form-group">
+        <label for="Phone">Phone Number</label>
+        {{input value=phone id="phone" placeholder=driver.phone}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Upload Image</label>
+        {{input value=image id="image" placeholder=driver.image}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Vehicle Type</label>
+        {{input value=type id="type" placeholder=driver.type}}
+      </div>
+
+      <div class="form-group">
+        <label for="tonnage">Vehicle Tonnage</label>
+        {{input value=tonnage id="tonnage" placeholder=driver.tonnage}}
+      </div>
+
+      <button class="btn-primary btn-lg"{{action 'update' driver}}>Save Changes</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn-primary btn-lg"{{action 'updateDriverForm'}}>Update</button>
+{{/if}}
