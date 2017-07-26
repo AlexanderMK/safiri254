@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed"
@@ -23,7 +23,57 @@
       </ul>
     </div>
   </div>
+</nav> -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" href="#">Safiri 254</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#about">Login</a>
+                </li>
+                <li>
+                    {{#link-to 'about' }}About{{/link-to}}
+                </li>
+                <li>
+                    <!-- <a href="#services">Post a Job</a> -->
+                    {{#link-to 'post' }}Post a Job{{/link-to}}
+                </li>
+                <li>
+                  {{#link-to 'available-jobs' }}Available Jobs{{/link-to}}
+                    <!-- <a href="#contact">Available Jobs</a> -->
+                </li>
+                <li>
+                    <!-- <a href="#contact">Driver Portfolio</a> -->
+                    {{#link-to 'driver' }}Driver Portfolio{{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'contact' }}Contact Us{{/link-to}}
+                </li>
+            </ul>
+
+            <!-- <li>{{ link-to 'About' 'about' }}</li>
+            <li>{{ link-to 'Available Jobs' 'available-jobs' }}</li>
+            <li>{{ link-to 'Our Drivers' 'driver' }}</li>
+            <li>{{ link-to 'Contact' 'contact' }}</li>
+            <li>{{ link-to 'Login' 'contact' }}</li>
+            <li>{{ link-to 'Post a Job' 'post' }}</li> -->
+
+</div>
+  </div>
 </nav>
+
+
 
 <div class="container">
   {{outlet}}
