@@ -1,0 +1,17 @@
+{
+  "name": "safiri254",
+  "description": "Small description for safiri254 goes here",
+  "main": "",
+  "authors": [
+    "kevinmainairungu <kevcarter32@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
